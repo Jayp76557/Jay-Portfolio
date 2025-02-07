@@ -5,6 +5,7 @@ import "./index.css";
 // import CombinedCanvas from "./components/CombinedCanvas";
 
 const App = () => {
+  console.log("React app is restarting...");
   return (
     <HashRouter>
       <div className='relative z-0 bg-primary'>
