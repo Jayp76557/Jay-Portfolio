@@ -22,7 +22,7 @@ const ServiceCard = ({index, title, icon}) => {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
           >
             <img src={icon} alt={title}
-              className="w-16 h-16 object-contain"/>
+              className="object-contain w-16 h-16"/>
             <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>  
 
 
@@ -47,7 +47,7 @@ const About = () => {
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
         I'm a proficient application and web developer with strong expertise in JavaScript and frameworks like React, Node.js, and Three.js. I adapt quickly and work closely with clients to develop scalable, efficient, and user-friendly solutions that address real-world challenges.
     </motion.p>
-    <div className="mt-20 flex flex-wrap gap-10">
+    <div className="flex flex-wrap gap-10 mt-20">
       {services.map((service, index)=>(
         <ServiceCard key={service.title} index={index} {...service} />
       ))}
